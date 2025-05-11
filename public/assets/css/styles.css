@@ -1,0 +1,180 @@
+:root {
+  --primary-color: #003580; /* Azul escuro */
+  --secondary-color: #0077c0; /* Azul médio */
+  --accent-color: #4a90e2; /* Azul claro */
+  --button-hover: #2a7bde; /* Azul hover */
+  --light-color: #f5f7fa;
+  --dark-color: #333333;
+  --text-color: #2d3748;
+  --text-light: #718096;
+}
+
+/* Padronização das fontes */
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.display-1,
+.display-2,
+.display-3,
+.display-4,
+.display-5,
+.display-6 {
+  font-family: "Lora", serif;
+  font-weight: 700;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://wallpapercave.com/wp/wp4442725.jpg") no-repeat center
+      center/cover;
+  height: 500px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .banner {
+    height: 350px;
+  }
+}
+
+/* Cards customizados (Usados em index.html - Gerado por JS) */
+.destino-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.destino-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+.card-image {
+  position: relative;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  transition: transform 0.5s;
+}
+
+.destino-card:hover .card-image img {
+  transform: scale(1.1);
+}
+
+.card-overlay {
+  background: rgba(0, 53, 128, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.destino-card:hover .card-overlay {
+  opacity: 1;
+}
+
+.btn-card {
+  border: 2px solid white;
+  transition: all 0.3s;
+}
+
+.btn-card:hover {
+  background: white !important;
+  color: var(--primary-color) !important;
+}
+
+.tipo-atracao {
+  background-color: var(--light-color);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Footer */
+.footer {
+  background-color: var(--primary-color);
+}
+
+.footer,
+.footer a,
+.footer .text-muted {
+  color: #f8f9fa !important;
+}
+
+.footer a:hover {
+  color: var(--accent-color) !important;
+  text-decoration: none;
+}
+
+/* Cores customizadas */
+.bg-primary-custom {
+  background-color: var(--primary-color) !important;
+}
+
+.text-primary-custom {
+  color: var(--primary-color) !important;
+}
+
+.bg-accent {
+  background-color: var(--accent-color) !important;
+}
+
+.btn-accent {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.btn-accent:hover {
+  background-color: var(--button-hover);
+  color: white;
+}
+
+/* Estilos específicos da página de detalhes (Usados em detalhe.html - Gerado por JS) */
+.detalhe-imagem-principal {
+  max-height: 500px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.foto-complementar img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.3rem;
+  transition: transform 0.2s ease-in-out;
+}
+.foto-complementar img:hover {
+  transform: scale(1.05);
+}
+.foto-complementar figcaption {
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: 0.5rem;
+  color: var(--text-light);
+}
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.info-item i {
+  color: var(--primary-color);
+  width: 20px;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .sticky-lg-top {
+    position: sticky;
+    top: 80px;
+    z-index: 1019;
+  }
+}

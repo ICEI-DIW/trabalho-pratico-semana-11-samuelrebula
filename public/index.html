@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guia Finlândia</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lora:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3 text-primary" href="index.html"
+          >Guia Finlândia</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center gap-2"
+                href="#destaques"
+              >
+                <i class="fas fa-star"></i> Destaques
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link d-flex align-items-center gap-2"
+                href="#todos-destinos"
+              >
+                <i class="fas fa-map-marked-alt"></i> Todos Destinos
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main>
+      <!-- Banner Principal -->
+      <section class="banner d-flex align-items-center pt-5 mt-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 class="display-4 fw-bold mb-3">Descubra a Finlândia</h1>
+              <p class="lead mb-4">
+                Explore a terra da aurora boreal, dos lagos cristalinos e do
+                verdadeiro Papai Noel
+              </p>
+              <a href="#destaques" class="btn btn-primary btn-lg px-4"
+                >Ver Destaques</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Texto Introdutório -->
+      <section class="py-5">
+        <div class="container text-center">
+          <h2 class="display-5 mb-4">Bem-vindo ao Guia Finlândia</h2>
+          <div class="row justify-content-center">
+            <div class="col-lg-8">
+              <p class="lead">
+                Nosso guia turístico especializado oferece informações
+                detalhadas sobre os melhores destinos da Finlândia. Desde as
+                vibrantes cidades até as paisagens naturais intocadas, ajudamos
+                você a planejar a viagem perfeita para este país nórdico
+                encantador.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção 1: Itens em Destaque (Carrossel Dinâmico) -->
+      <section id="destaques" class="py-5 bg-light">
+        <div class="container">
+          <h2 class="display-5 text-center mb-5">Destinos em Destaque</h2>
+          <div
+            id="carouselDestaques"
+            class="carousel slide shadow rounded overflow-hidden"
+            data-bs-ride="carousel"
+          >
+            <!-- Indicadores -->
+            <div class="carousel-indicators" id="carousel-indicators">
+              <!-- Indicadores serão inseridos aqui pelo JS -->
+            </div>
+            <!-- Slides do Carrossel -->
+            <div class="carousel-inner" id="carousel-inner-destaques">
+              <!-- Itens do carrossel serão inseridos aqui pelo JS -->
+            </div>
+            <!-- Controles -->
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselDestaques"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselDestaques"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção 2: Grupo de Cards (Todos os Itens Dinâmicos) -->
+      <section id="todos-destinos" class="py-5">
+        <div class="container">
+          <h2 class="display-5 text-center mb-3">Explore Todos os Destinos</h2>
+          <p class="text-muted text-center mb-5">
+            Descubra todas as maravilhas que a Finlândia tem a oferecer.
+          </p>
+          <div class="row g-4" id="cards-container">
+            <!-- Cards serão inseridos aqui pelo JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Mapa Interativo -->
+      <section id="mapa" class="py-4 bg-light">
+        <div class="container">
+          <h2 class="display-5 text-center mb-4">
+            Mapa Interativo da Finlândia
+          </h2>
+          <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-9">
+              <div class="ratio ratio-16x9 rounded shadow overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7253666.09615298!2d22.22902325!3d64.77537545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4681cadf4b32f6dd%3A0x146d63c75a810!2sFinl%C3%A2ndia!5e0!3m2!1spt-BR!2sbr!4v1620000000000!5m2!1spt-BR!2sbr"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  style="border: 0"
+                  title="Mapa Interativo da Finlândia"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+          <p class="text-center text-muted mt-3 small">
+            Navegue pelo mapa para explorar a geografia da Finlândia.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-5 pb-3">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4">
+            <h3 class="h4 mb-4">Sobre Nós</h3>
+            <p class="text-white-50">
+              O Guia Finlândia é o seu recurso online para planejar sua viagem à
+              Finlândia, com informações e dicas locais.
+            </p>
+            <div class="d-flex gap-3 mt-4">
+              <a href="#" class="text-white"
+                ><i class="fab fa-facebook-f fa-lg"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="fab fa-instagram fa-lg"></i
+              ></a>
+              <a href="#" class="text-white"
+                ><i class="fab fa-twitter fa-lg"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-lg-2">
+            <h3 class="h4 mb-4">Links Rápidos</h3>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#destaques" class="text-decoration-none text-white-50"
+                  >Destaques</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#todos-destinos"
+                  class="text-decoration-none text-white-50"
+                  >Todos Destinos</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3">
+            <h3 class="h4 mb-4">Contato</h3>
+            <ul class="list-unstyled">
+              <li class="mb-3 d-flex align-items-center gap-2 text-white-50">
+                <i class="fas fa-envelope"></i> contato@guiafinlandia.com
+              </li>
+              <li class="mb-3 d-flex align-items-center gap-2 text-white-50">
+                <i class="fas fa-phone"></i> +358 40 123 4567
+              </li>
+              <li class="mb-3 d-flex align-items-center gap-2 text-white-50">
+                <i class="fas fa-map-marker-alt"></i> Helsinki, Finlândia
+              </li>
+            </ul>
+          </div>
+          <!-- Info Aluno Footer -->
+          <div class="col-lg-3">
+            <h3 class="h4 mb-4">Desenvolvido por</h3>
+            <div id="info-aluno-footer" class="text-white-50">
+              <!-- Info do aluno será inserida aqui pelo JS -->
+            </div>
+          </div>
+        </div>
+        <hr class="my-4 border-secondary" />
+        <div class="text-center small text-white-50">
+          &copy; 2025 Guia Finlândia. Site acadêmico. Todos os direitos
+          reservados.
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- script JS -->
+    <script src="./assets/scripts/app.js"></script>
+  </body>
+</html>
