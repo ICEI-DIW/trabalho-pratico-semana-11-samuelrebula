@@ -4,10 +4,10 @@ Nessa etapa, vamos evoluir o projeto anterior e contemplar um ambiente de desenv
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Samuel Rebula
+- Matricula: 881178
+- Proposta de projeto escolhida: Guia de Lugares Turísticos
+- Breve descrição sobre seu projeto: O "Guia Finlândia" é dedicado a apresentar os destinos turísticos da Finlândia. O projeto oferece informações sobre os locais, com imagens, descrições e um mapa interativo. Além de uma galeria de fotos do país.
 
 **Print do teste da API com visualização do JSON**
 
@@ -15,7 +15,7 @@ Nessa etapa, vamos evoluir o projeto anterior e contemplar um ambiente de desenv
 
 **Print da aba NETWORK com requisições Fetch/XHR**
 
-<< COLOQUE A IMAGEM AQUI >>
+![Fetch/XHR](public/assets/img/fetch.png)
 
 ## **Orientações Gerais**
 
